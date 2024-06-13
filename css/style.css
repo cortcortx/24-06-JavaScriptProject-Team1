@@ -1,57 +1,94 @@
-.pix_gif{
-    width: 20%;
-    height: 250px;
+* {
+  box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
+.pix_gif {
+  width: 20%;
+  height: 250px;
 }
 
 header {
-    background-color: #A2DCE7;
-    padding: 1em 0 1em 2em;
-
+  background-color: #a2dce7;
+  padding: 1em 0 1em 0.5em;
 }
 
 h1 {
-    font-family: 'Pixelify Sans', sans-serif; 
-    font-size: 3vw;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 25pt;
 }
 
 #left {
-    width: 40%;
+  width: 40%;
 }
 
 #right_section {
-    width: 60%;
+  width: 60%;
 }
 
-/* Card styling **************/ 
+.container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px; /* Adjust spacing between sections */
+}
+
+#submit_btn {
+  margin-top: 2em;
+}
+
+/* Card styling **************/
+.custom_carousel_item {
+  padding: 0 5em 5em 5em;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators {
+  background-color: #0dcaf0;
+  padding: 1em;
+}
 
 .card-text {
-    float: left;
-    width: 5%;
+  float: left;
+  width: 5%;
 }
 
-/* Activity buttons */
+/* Card buttons */
 
 .activityBtns img {
-    width: 50px;
-    height: 50px;
-    margin: 1em .5em 1em 1em;
-
+  width: 50px;
+  height: 50px;
+  margin: 1em 0.5em 1em 1em;
 }
 .activityBtns button {
-    border-radius: 80%;
-    padding: 0 5px 0 0;
-    margin-right: 20px;
-    background-color: #fff;
+  border-radius: 80%;
+  padding: 0 5px 0 0;
+  margin-right: 20px;
+  background-color: #fff;
 }
 .activityBtns button:hover {
-    background-color: #c0c0c0;
+  background-color: #c0c0c0;
 }
 
 .btn-danger {
-    margin-bottom: 2em;
-    margin-right: 0;
+  margin-top: 3em;
+  margin-left: 18em;
+}
+
+@media screen and (max-width: 777px) {
+  main {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  #left_section,
+  #right_section {
+    width: 95%;
+  }
+  #submit_btn {
+    margin-top: 2em;
+    width: 100%;
+  }
 }
