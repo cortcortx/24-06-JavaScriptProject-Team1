@@ -1,0 +1,57 @@
+.pix_gif{
+    width: 20%;
+    height: 250px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #A2DCE7;
+    padding: 1em 0 1em 2em;
+
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif; 
+    font-size: 3vw;
+}
+
+#left {
+    width: 40%;
+}
+
+#right_section {
+    width: 60%;
+}
+
+/* Card styling **************/ 
+
+.card-text {
+    float: left;
+    width: 5%;
+}
+
+/* Activity buttons */
+
+.activityBtns img {
+    width: 50px;
+    height: 50px;
+    margin: 1em .5em 1em 1em;
+
+}
+.activityBtns button {
+    border-radius: 80%;
+    padding: 0 5px 0 0;
+    margin-right: 20px;
+    background-color: #fff;
+}
+.activityBtns button:hover {
+    background-color: #c0c0c0;
+}
+
+.btn-danger {
+    margin-bottom: 2em;
+    margin-right: 0;
+}
