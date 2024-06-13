@@ -1,0 +1,76 @@
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+body {
+    color: #f2f2f2; 
+    background: url("https://assetsio.gnwcdn.com/animal-crossing-new-horizons-villagers-special-list.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}
+
+.container-xl {
+    background-color: rgba(38, 38, 38, 0.9);
+    border-radius: 1em;
+    width: 70%;
+    height: auto; 
+    margin-top: 5%;
+    padding: 2em; 
+}
+
+.container-xl h1 {
+    font-family: 'Pixelify Sans', sans-serif; 
+    margin-left: 0; 
+    margin-top: 10%; 
+    font-size: 8vw;
+    text-align: center; 
+}
+
+p {
+    text-align: justify;
+    line-height: 2em;
+    padding: 1em;
+    margin: 2em auto; 
+    width: 90%; 
+    font-size: 1.6vw; 
+}
+
+p .btn {
+    background-color: #A2DCE7;
+    display: block;
+    margin-top: 2em; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+}
+
+p .btn:hover {
+    background-color: #618289;
+}
+
+a {
+    color: #272727;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 777px) {
+    .container-xl h1 {
+        font-size: 4em;
+    }
+    p {
+        font-size: 2vw; 
+        line-height: 2em;
+    }
+    .btn {
+        width: auto; 
+        height: auto;
+    }
+    a {
+        font-size: 3vw;
+    }
+}
