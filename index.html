@@ -18,7 +18,7 @@
         <h1>Pixel Pals >></h1>
     </header>
     <main class="d-flex p-2">
-        <section id="left_section"><!--
+        <section id="left_section">
             <form id="pet_form">
                 <label for="pet_species">Select your pet</label>
                 <select name="species" 
@@ -54,7 +54,7 @@
                 <option value="forest">Forest</option>
             </select>
             <button type="submit" id="submit_btn">Create My Pal</button>
-            </form>-->
+            </form>
             <p id="display_name_test"></p>
             <img id="display_species_test" class="pix_gif">
             <p id="display_gender_test"></p>
@@ -81,58 +81,30 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Pet name 1</h5>
                                     <p class="card-text">
-                                        <ol>
+                                        <ul>
                                             <li>Species</li>
                                             <li>Gender</li>
                                             <li>Personality</li>
                                             <li>Habitat</li>
-                                        </ol>
+                                        </ul>
+                                        <ul>
+                                            <li>feed health bar</li>
+                                            <li>happiness emoji bar</li>
+                                            <li>exercise heart bar</li>
+                                        </ul>
                                     </p>
                                     <p class="activityBtns">
-                                        <img src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png">
-                                        <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png">
-                                        <img src="https://cdn-icons-png.flaticon.com/256/308/308962.png">
+                                        <button type="submit" id="feedBtn"><img src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png"></button>
+                                        <button type="submit" id="playBtn"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png"></button>
+                                        <button type="submit" id="exerciseBtn"><img src="https://cdn-icons-png.flaticon.com/256/308/308962.png"></button>
                                     </p>
-                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pet name 2</h5>
-                                    <p class="card-text">                                          
-                                         <ol>
-                                            <li>Species</li>
-                                            <li>Gender</li>
-                                            <li>Personality</li>
-                                            <li>Habitat</li>
-                                        </ol>
-                                        </p>
-                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pet name 3</h5>
-                                    <p class="card-text">
-                                        <ol>
-                                            <li>Species</li>
-                                            <li>Gender</li>
-                                            <li>Personality</li>
-                                            <li>Habitat</li>
-                                        </ol>
-                                    </p>
-                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
 
+                                    <button id="delete_btn" class="btn btn-danger btn-sm">Delete</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+
                     <a class="carousel-control-prev" href="#pet_carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
