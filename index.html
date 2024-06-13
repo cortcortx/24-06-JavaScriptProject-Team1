@@ -17,8 +17,8 @@
     <header>
         <h1>Pixel Pals >></h1>
     </header>
-    <main>
-        <section id="left_section">
+    <main class="d-flex p-2">
+        <section id="left_section"><!--
             <form id="pet_form">
                 <label for="pet_species">Select your pet</label>
                 <select name="species" 
@@ -54,7 +54,7 @@
                 <option value="forest">Forest</option>
             </select>
             <button type="submit" id="submit_btn">Create My Pal</button>
-            </form>
+            </form>-->
             <p id="display_name_test"></p>
             <img id="display_species_test" class="pix_gif">
             <p id="display_gender_test"></p>
@@ -63,10 +63,10 @@
         </section>
 
 
-        <!-- Carousel with pet card code -->
+     
         <section id="right_section">
-            <div id="pets_container">
-
+            <div id="pets_container" class="d-flex flex-wrap justify-content-evenly">
+   <!-- Carousel with pet card code -->
                 <div id="pet_carousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#pet_carousel" data-slide-to="0" class="active"></li>
@@ -74,33 +74,61 @@
                         <li data-target="#pet_carousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card" style="width: 22rem;">
+                                <img class="card-img-top" src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title 1</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Pet name 1</h5>
+                                    <p class="card-text">
+                                        <ol>
+                                            <li>Species</li>
+                                            <li>Gender</li>
+                                            <li>Personality</li>
+                                            <li>Habitat</li>
+                                        </ol>
+                                    </p>
+                                    <p class="activityBtns">
+                                        <img src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png">
+                                        <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png">
+                                        <img src="https://cdn-icons-png.flaticon.com/256/308/308962.png">
+                                    </p>
+                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <img class="card-img-top" src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title 2</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Pet name 2</h5>
+                                    <p class="card-text">                                          
+                                         <ol>
+                                            <li>Species</li>
+                                            <li>Gender</li>
+                                            <li>Personality</li>
+                                            <li>Habitat</li>
+                                        </ol>
+                                        </p>
+                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <img class="card-img-top" src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title 3</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Pet name 3</h5>
+                                    <p class="card-text">
+                                        <ol>
+                                            <li>Species</li>
+                                            <li>Gender</li>
+                                            <li>Personality</li>
+                                            <li>Habitat</li>
+                                        </ol>
+                                    </p>
+                                    <a href="#" class="btn btn-danger btn-sm">Delete</a>
+
                                 </div>
                             </div>
                         </div>
@@ -113,13 +141,11 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div>
 
-
-
-            </div>
 
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
