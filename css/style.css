@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #A2DCE7;
+    padding: 1em 0 1em 2em;
+
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif; 
+    font-size: 3vw;
+}
