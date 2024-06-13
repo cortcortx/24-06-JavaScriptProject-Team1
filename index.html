@@ -32,11 +32,6 @@
     ></script>
 
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      async
-      defer
-      src="../24-06-JavaScriptProject-Team1/js/script.js"
-    ></script>
   </head>
 
   <body>
@@ -63,7 +58,7 @@
             class="form-control"
             required
           />
-          <!--Radio buttons needed-->
+
           <label for="gender" class="form-label">Gender</label>
           <select name="gender" id="pet_gender" class="form-control" required>
             <option value="" disabled selected>Choose a gender</option>
@@ -72,7 +67,7 @@
             <option value="unknown">Unknown</option>
           </select>
 
-          <!--Check boxes needed for multi-select-->
+          <!--Check boxes needs functionality for multi-select-->
           <label for="personality">Personality</label>
           <ul class="list-group">
             <li class="list-group-item">
@@ -174,32 +169,31 @@
               ></button>
             </div>
 
-            <img id="display_species_test" class="pix_gif" />
-            <p id="display_name_test"></p>
-            <p id="display_gender_test"></p>
-            <p id="display_personality_test"></p>
-            <p id="display_habitat_test"></p>
+            <!-- <img id="display_species_test" class="pix_gif" />-->
 
             <div class="carousel-inner">
               <!--Beginning of individual cards code-->
               <div class="carousel-item custom_carousel_item active">
                 <div class="card" style="width: 22rem">
                   <img
-                    class="card-img-top"
-                    src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg"
-                    alt="Card image cap"
+                    id="display_species_test"
+                    class="pix_gif"
+                    src="https://thumbs.dreamstime.com/b/pixel-question-mark-icon-clipart-image-isolated-white-background-210308462.jpg"
+                    alt="Default Image"
                   />
+
                   <div
                     class="card-body d-flex flex-column justify-content-center align-items-center"
                   >
-                    <h5 class="card-title">Pet name 1</h5>
+                    <h5 class="card-title" id="display_name_test">
+                      Pet name 1
+                    </h5>
 
                     <section class="d-flex justify-content-between">
                       <ul>
-                        <li>Species</li>
-                        <li>Gender</li>
-                        <li>Personality</li>
-                        <li>Habitat</li>
+                        <p id="display_gender_test"></p>
+                        <p id="display_personality_test"></p>
+                        <p id="display_habitat_test"></p>
                       </ul>
                       <ul>
                         <li>feed health bar</li>
@@ -233,107 +227,6 @@
               </div>
               <!--End of card-->
 
-              <div class="carousel-item custom_carousel_item">
-                <div class="card" style="width: 22rem">
-                  <img
-                    class="card-img-top"
-                    src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg"
-                    alt="Card image cap"
-                  />
-                  <div
-                    class="card-body d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <h5 class="card-title">Pet name 1</h5>
-
-                    <section class="d-flex justify-content-between">
-                      <ul>
-                        <li>Species</li>
-                        <li>Gender</li>
-                        <li>Personality</li>
-                        <li>Habitat</li>
-                      </ul>
-
-                      <ul>
-                        <li>feed health bar</li>
-                        <li>happiness emoji bar</li>
-                        <li>exercise heart bar</li>
-                      </ul>
-                    </section>
-
-                    <div class="activityBtns">
-                      <button type="submit" id="feedBtn">
-                        <img
-                          src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png"
-                        />
-                      </button>
-                      <button type="submit" id="playBtn">
-                        <img
-                          src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png"
-                        />
-                      </button>
-                      <button type="submit" id="exerciseBtn">
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/256/308/308962.png"
-                        />
-                      </button>
-                    </div>
-                    <button id="delete_btn" class="btn btn-danger btn-sm">
-                      Delete
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item custom_carousel_item">
-                <div class="card" style="width: 22rem">
-                  <img
-                    class="card-img-top"
-                    src="https://www.shutterstock.com/image-vector/pixel-character-jack-russel-terrier-260nw-2157182069.jpg"
-                    alt="Card image cap"
-                  />
-                  <div
-                    class="card-body d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <h5 class="card-title">Pet name 1</h5>
-
-                    <section class="d-flex justify-content-between">
-                      <ul>
-                        <li>Species</li>
-                        <li>Gender</li>
-                        <li>Personality</li>
-                        <li>Habitat</li>
-                      </ul>
-
-                      <ul>
-                        <li>feed health bar</li>
-                        <li>happiness emoji bar</li>
-                        <li>exercise heart bar</li>
-                      </ul>
-                    </section>
-
-                    <div class="activityBtns">
-                      <button type="submit" id="feedBtn">
-                        <img
-                          src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png"
-                        />
-                      </button>
-                      <button type="submit" id="playBtn">
-                        <img
-                          src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png"
-                        />
-                      </button>
-                      <button type="submit" id="exerciseBtn">
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/256/308/308962.png"
-                        />
-                      </button>
-                    </div>
-                    <button id="delete_btn" class="btn btn-danger btn-sm">
-                      Delete
-                    </button>
-                  </div>
-                </div>
-              </div>
               <!--End of all cards code-->
             </div>
             <button
