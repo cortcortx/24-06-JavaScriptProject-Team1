@@ -13,6 +13,8 @@ const testPersonalityDisplay = document.getElementById(
 );
 const testHabitatDisplay = document.getElementById("display_habitat_test");
 
+const cardDataArray = [];
+
 function getName(event) {
   event.preventDefault();
 
@@ -59,6 +61,8 @@ petForm.addEventListener("submit", (e) => {
   const persValue = getSelectedPersonality();
   const habValue = pixHab.value;
 
+  createCard(cardsData);
+
   // Clear input fields
   pixName.value = "";
   pixSpec.value = "";
@@ -69,12 +73,14 @@ petForm.addEventListener("submit", (e) => {
   pixHab.value = "";
 });
 
-//creates a pet card based on user selections
-function createCard(cardData) {
-  const newCard = document.createElement("div");
-  newCard.classList.add("carousel-item", "custom_carousel_item");
+function createCard(cardsData) {
+  document.getElementById("dynamicCardContainer").innerHTML = "";
 
-  newCard.innerHTML = `
+  cardsData.forEach((cardData) => {
+    const newCard = document.createElement("div");
+    newCard.classList.add("carousel-item", "custom_carousel_item");
+
+    newCard.innerHTML = `
     <div class="card" style="width: 22rem">
       <img class="pix_gif" src="${cardData.imageUrl}" alt="${cardData.itemName}" />
       <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -107,5 +113,6 @@ function createCard(cardData) {
     </div>
   `;
 
-  document.getElementById("dynamicCardContainer").appendChild(newCard);
+    document.getElementById("dynamicCardContainer").appendChild(newCard);
+  });
 }
