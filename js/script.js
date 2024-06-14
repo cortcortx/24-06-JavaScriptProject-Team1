@@ -50,20 +50,20 @@ function createCard(name, species, gender, personality, habitat) {
             <li>Habitat: <p>${habitat}</p></li>
           </ul>
           <ul>
-            <li>Hunger: <br><img class="bar-imgs" src="./images/fullhealth.jpeg"></li>
-            <li>Mood:  <br><img id="emoji-imgs" src="./images/happy.jpeg"></li>
-            <li>Exercise:  <br><img class="bar-imgs" src="./images/fivehearts.jpeg"></li>
+            <li>Hunger: <br><img class="bar-img" health-lvl="0" src="./images/zerohealth.jpeg"></li>
+            <li>Mood:  <br><img class="emoji-imgs" emoji-lvl="0" src="./images/angry.jpeg"></li>
+            <li>Exercise:  <br><img class="heart-img" heart-lvl="0" src="./images/fivehearts.jpeg"></li>
           </ul>
         </section>
         <div class="activityBtns">
-          <button type="submit" id="feedBtn">
-            <img src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png" />
+          <button type="submit">
+            <img class="feedBtn" src="https://images.emojiterra.com/openmoji/v13.1/512px/1f37d.png" />
           </button>
-          <button type="submit" id="playBtn">
-            <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png" />
+          <button type="submit">
+            <img class="playBtn" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/bw/1024px/1f3ae.png" />
           </button>
-          <button type="submit" id="exerciseBtn">
-            <img src="https://cdn-icons-png.flaticon.com/256/308/308962.png" />
+          <button type="submit">
+            <img class="exerciseBtn" src="https://cdn-icons-png.flaticon.com/256/308/308962.png" />
           </button>
         </div>
         <button class="btn btn-danger btn-sm delete-btn">Delete</button>
@@ -97,6 +97,92 @@ function resetFormFields() {
   });
   pixHab.value = "";
 }
+
+let feedArr = [
+  "./images/zerohealth.jpeg",
+  "./images/onehealth.jpeg",
+  "./images/twohealth.jpeg",
+  "./images/threehealth.jpeg",
+  "./images/fourhealth.jpeg",
+  "./images/fullhealth.jpeg",
+];
+
+// Add event listener to the feedBtn
+document
+  .getElementById("dynamicCardContainer")
+  .addEventListener("click", (e) => {
+    if (e.target.classList.contains("feedBtn")) {
+      let imgHealthBar =
+        e.target.parentElement.parentElement.previousElementSibling.querySelector(
+          ".bar-img"
+        );
+
+      let healthLevel = imgHealthBar.getAttribute("health-lvl");
+
+      if (healthLevel < feedArr.length) {
+        imgHealthBar.setAttribute("health-lvl", ++healthLevel);
+
+        imgHealthBar.setAttribute("src", feedArr[healthLevel]);
+      }
+    }
+  });
+
+let exerciseArr = [
+  "./images/zerohearts.jpeg",
+  "./images/oneheart.jpeg",
+  "./images/twohearts.jpeg",
+  "./images/threehearts.jpeg",
+  "./images/fourhearts.jpeg",
+  "./images/fivehealth.jpeg",
+];
+
+// Add event listener to the exerciseBtn
+document
+  .getElementById("dynamicCardContainer")
+  .addEventListener("click", (e) => {
+    if (e.target.classList.contains("exerciseBtn")) {
+      let imgHeartBar =
+        e.target.parentElement.parentElement.previousElementSibling.querySelector(
+          ".heart-img"
+        );
+
+      let heartLevel = imgHeartBar.getAttribute("heart-lvl");
+
+      if (heartLevel < exerciseArr.length) {
+        imgHeartBar.setAttribute("heart-lvl", ++heartLevel);
+
+        imgHeartBar.setAttribute("src", exerciseArr[heartLevel]);
+      }
+    }
+  });
+
+let playArr = [
+  "./images/angry.jpeg",
+  "./images/sad.jpeg",
+  "./images/content.jpeg",
+  "./images/happy.jpeg",
+  "./images/joyful.jpeg",
+];
+
+// Add event listener to the playBtn
+document
+  .getElementById("dynamicCardContainer")
+  .addEventListener("click", (e) => {
+    if (e.target.classList.contains("playBtn")) {
+      let imgEmojiBar =
+        e.target.parentElement.parentElement.previousElementSibling.querySelector(
+          ".emoji-imgs"
+        );
+
+      let emojiLevel = imgEmojiBar.getAttribute("emoji-lvl");
+
+      if (emojiLevel < playArr.length) {
+        imgEmojiBar.setAttribute("emoji-lvl", ++emojiLevel);
+
+        imgEmojiBar.setAttribute("src", playArr[emojiLevel]);
+      }
+    }
+  });
 
 //associates image URL based on the species using an object
 function getImageUrl(species) {

@@ -13,12 +13,13 @@ html {
   padding: 1em;
 }
 
-.bar-imgs {
+.bar-img,
+.heart-img {
   width: 50%;
   height: auto;
 }
 
-#emoji-imgs {
+.emoji-imgs {
   width: 15%;
   height: auto;
 }
