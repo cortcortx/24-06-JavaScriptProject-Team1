@@ -23,6 +23,10 @@ h1 {
   font-size: 25pt;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #left {
   width: 40%;
 }
