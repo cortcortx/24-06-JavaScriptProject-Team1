@@ -1,20 +1,30 @@
+html {
+  --brand-color: #3dd5f3;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .pix_gif {
-  width: 20%;
-  height: 250px;
+  width: 60%;
+  height: auto;
+  margin-left: 5em;
+  padding: 1em;
 }
 
 header {
-  background-color: #a2dce7;
+  background-color: var(--brand-color);
   padding: 1em 0 1em 0.5em;
 }
 
 h1 {
   font-family: "Pixelify Sans", sans-serif;
   font-size: 25pt;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #left {
@@ -27,6 +37,22 @@ h1 {
 
 .container {
   display: flex;
+}
+
+.form-check-input:checked {
+  background-color: var(--brand-color);
+  border-color: #fff;
+}
+
+select:focus > option:hover {
+  background-color: var(--brand-color);
+  box-shadow: 0 0 10px 100px var(--brand-color) inset;
+}
+
+.form-control:focus,
+.form-control:hover {
+  border-color: var(--brand-color);
+  box-shadow: 0 0 0 0.25rem var(--brand-color);
 }
 
 .flex-item {
@@ -46,7 +72,7 @@ h1 {
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
 .carousel-indicators {
-  background-color: #0dcaf0;
+  background-color: var(--brand-color);
   padding: 1em;
 }
 
@@ -69,7 +95,7 @@ h1 {
   background-color: #fff;
 }
 .activityBtns button:hover {
-  background-color: #c0c0c0;
+  background-color: var(--brand-color);
 }
 
 .btn-danger {
