@@ -13,6 +13,16 @@ html {
   padding: 1em;
 }
 
+.bar-imgs {
+  width: 50%;
+  height: auto;
+}
+
+#emoji-imgs {
+  width: 15%;
+  height: auto;
+}
+
 header {
   background-color: var(--brand-color);
   padding: 1em 0 1em 0.5em;

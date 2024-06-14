@@ -50,9 +50,9 @@ function createCard(name, species, gender, personality, habitat) {
             <li>Habitat: <p>${habitat}</p></li>
           </ul>
           <ul>
-            <li>feed health bar</li>
-            <li>happiness emoji bar</li>
-            <li>exercise heart bar</li>
+            <li>Hunger: <br><img class="bar-imgs" src="./images/fullhealth.jpeg"></li>
+            <li>Mood:  <br><img id="emoji-imgs" src="./images/happy.jpeg"></li>
+            <li>Exercise:  <br><img class="bar-imgs" src="./images/fivehearts.jpeg"></li>
           </ul>
         </section>
         <div class="activityBtns">
